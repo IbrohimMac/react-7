@@ -21,6 +21,7 @@ function TripList() {
             return (
               <div className="trips">
                 <div className="card">
+                  <h1>Id: {trip.id}</h1>
                   <h2>{trip.name}</h2>
                   <h3>{trip.username}</h3>
                   <p>
@@ -36,6 +37,11 @@ function TripList() {
                   <p className="trip-end-p">
                     Phone: <a href="">{trip.phone}</a>
                   </p>
+                  <div className="buts">
+                    <button>Posts {trip.posts}</button>
+                    <button>Todos {trip.posts}</button>
+                    <button>Album {trip.posts}</button>
+                  </div>
                 </div>
               </div>
             );
